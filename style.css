@@ -17,6 +17,7 @@ header {
     background-color: rgba(0, 0, 0, 0.512);
     height: 8vh;
     width: 100vw;
+    padding-bottom: .1em;
 }
 
 .nav-list {
@@ -41,12 +42,13 @@ header {
 .nav-list li:hover {
     font-size: 1.55em;
     border-bottom: white 2px solid;
-    padding-top: .2em;
+    padding-top: .5em;
 }
 
 @media (max-width: 600px) {
     header {
-        height: 6vh;
+        height: 5vh;
+        padding-bottom: .2em;
     }
     .nav-list li {
         font-size: 1em;
