@@ -47,10 +47,8 @@ header {
 }
 
 main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     margin-top: 12em;
 }
 
@@ -58,9 +56,15 @@ main {
     background-color: rgba(0, 0, 0, 0.585);
     border: solid 2px rgba(0, 0, 0, 0.595);
     padding: .8em;
+    width: 35em;
+    border-radius: 8px;
 }
 
-main .title {
+.text-container {
+    margin-left: 1.25em;
+}
+
+.text-container .title {
     font-family: Italian;
     color: rgb(204, 171, 61);
     font-size: 8em;
@@ -70,13 +74,33 @@ main .title {
     margin: 0;
 }
 
-main .sub-title {
+.text-container .sub-title {
     color: white;
     text-shadow: rgb(0, 0, 0) 0 0 10px;
     font-weight: bold;
     font-size: 4em;
-    margin: -.5em 0 0 0;
+    margin: -.7em 0 0 0;
     font-style: italic;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+.img-container img {
+    border: solid 3px rgba(74, 74, 74, 0.595);
+    width: 70%;
+    opacity: 90%;
+}
+
+.img-container .img-caption {
+    color: rgba(255, 255, 255, 0.743);
+    margin: 0 0 .2em 0;
+    font-size: 1.4em;
+    letter-spacing: .12em;
 }
 
 @media (max-width: 600px) {
@@ -90,11 +114,20 @@ main .sub-title {
     .nav-list {
         gap: 2em;
     }
-    main .title {
+    main {
+        margin-top: 5em;
+    }
+    .text-container .title {
         font-size: 5em;
     }
-    main .sub-title {
+    .text-container .sub-title {
         font-size: 2.5em;
+    }
+    .info {
+        transform: scale(.9);
+    }
+    .img-container img {
+        margin-top: 1em;
     }
 }
 
