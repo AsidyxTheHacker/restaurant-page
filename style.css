@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    animation: fadeIn 1s linear;
 }
 
 #content {
@@ -127,11 +128,20 @@ main {
         transform: scale(.9);
     }
     .img-container img {
-        margin-top: 1em;
+        margin-top: 0;
     }
 }
 
 @font-face {
     font-family: Italian;
     src: url(media/italian.ttf);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
