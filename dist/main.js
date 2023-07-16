@@ -1,1 +1,1 @@
-console.log("Big Chungus"),console.log("Pizza Rolls");
+(()=>{document.getElementById("content");const e=document.querySelector("main");let n=document.getElementById("home-btn"),t=document.getElementById("menu-btn"),c=document.getElementById("about-btn"),d=document.getElementById("contact-btn");n.addEventListener("click",(()=>{e.innerHTML=""})),t.addEventListener("click",(()=>{e.innerHTML=""})),c.addEventListener("click",(()=>{e.innerHTML=""})),d.addEventListener("click",(()=>{e.innerHTML=""}))})();
