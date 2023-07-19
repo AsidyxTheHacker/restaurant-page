@@ -50,19 +50,17 @@ header {
 main {
     display: flex;
     justify-content: center;
-    margin-top: 12em;
+    margin-top: 8em;
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.585);
-    border: solid 2px rgba(0, 0, 0, 0.595);
-    padding: .8em;
-    width: 35em;
+    box-shadow: rgba(0, 0, 0, 0.871) 0 0 4px;
+    padding: 1em;
     border-radius: 8px;
-}
-
-.text-container {
-    margin-left: 1.25em;
 }
 
 .text-container .title {
@@ -72,15 +70,15 @@ main {
     font-style: italic;
     text-shadow: rgb(0, 0, 0) 0 0 10px;
     letter-spacing: -.01em;
-    margin: 0;
+    margin: 0 0 -.35em 0;
 }
 
-.text-container .sub-title {
+.sub-title {
     color: white;
     text-shadow: rgb(0, 0, 0) 0 0 10px;
     font-weight: bold;
     font-size: 4em;
-    margin: -.7em 0 0 0;
+    margin: 0;
     font-style: italic;
 }
 
@@ -88,13 +86,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1.2em;
+    margin-top: .5em;
 }
 
 .img-container img {
-    border: solid 3px rgba(74, 74, 74, 0.595);
-    width: 70%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.946);
     opacity: 90%;
+    border-radius: 50%;
+    height: 30em;
 }
 
 .img-container .img-caption {
@@ -116,7 +115,7 @@ main {
         gap: 2em;
     }
     main {
-        margin-top: 5em;
+        margin-top: 2em;
     }
     .text-container .title {
         font-size: 5em;
@@ -129,6 +128,7 @@ main {
     }
     .img-container img {
         margin-top: 0;
+        height: 25em;
     }
 }
 
