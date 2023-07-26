@@ -126,7 +126,13 @@ menuBtn.addEventListener('click', () => {
 })
 
 aboutBtn.addEventListener('click', () => {
-    main.innerHTML = ``
+    main.innerHTML = `<div class="info">
+    <h1 class="sub-title">About Us</h1>
+    <p class="food-cap" style="border-top: white solid 3px; padding-top: 2em;">Looking for something good to eat? Try the best pizzas in Mirefield.</p>
+    <p class="food-cap">Lorenzo's Pizza & Restaurant remains one of the most popular in Mirefield thanks to its fresh ingredients. Give our menu a try & see what all the fuss is about.</p>
+    <p class="food-cap">If you're feeling hungry, don't hesitate. Enjoy the top dishes Mirefield has to offer. Our restaurant is known for our specialty Pizzas.</p>
+    <p class="food-cap">Lorenzo's Pizza & Restaurant accepts credit cards. That makes it easy to get your pizza sooner.</p>
+</div>`
 })
 
 contactBtn.addEventListener('click', () => {
