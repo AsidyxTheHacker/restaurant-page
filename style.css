@@ -156,8 +156,8 @@ main {
     .nav-list {
         gap: 2em;
     }
-    main {
-        margin-top: -5em;
+    .text-container {
+        width: 21em;
     }
     .text-container .title {
         font-size: 5em;
@@ -166,7 +166,7 @@ main {
         font-size: 2.5em;
     }
     .info {
-        transform: scale(.9);
+        width: 20em;
     }
     .img-container img {
         margin-top: 0;
