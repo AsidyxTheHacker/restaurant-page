@@ -19,7 +19,6 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.585);
     height: 8vh;
-    width: 100vw;
     padding-bottom: .1em;
 }
 
@@ -50,7 +49,7 @@ header {
 main {
     display: flex;
     justify-content: center;
-    margin-top: 8em;
+    margin-top: 3em;
 }
 
 .info {
@@ -60,6 +59,7 @@ main {
     background-color: rgba(0, 0, 0, 0.585);
     box-shadow: rgba(0, 0, 0, 0.871) 0 0 4px;
     padding: 1em;
+    margin-bottom: 3em;
     border-radius: 8px;
 }
 
@@ -98,9 +98,51 @@ main {
 
 .img-container .img-caption {
     color: rgba(255, 255, 255, 0.743);
-    margin: 0 0 .2em 0;
+    margin: .3em 0 0 0;
     font-size: 1.4em;
     letter-spacing: .12em;
+}
+
+.menu-title {
+    color: white;
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    margin: .8em .5em .5em .5em;
+    text-decoration: underline;
+}
+
+.menu-items {
+    border-bottom: white solid 2px;
+    padding-bottom: .5em;
+    border-radius: 8px;
+}
+
+.food-items {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+}
+
+.food-cap {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.929) 0 0 4px;
+    margin: .5em;
+    text-align: center;
+}
+
+.food img {
+    height: 8em;
 }
 
 @media (max-width: 600px) {
@@ -108,14 +150,14 @@ main {
         height: 5vh;
         padding-bottom: .2em;
     }
-    .nav-list li {
+    .nav-list li, .food-cap {
         font-size: 1em;
     }
     .nav-list {
         gap: 2em;
     }
     main {
-        margin-top: 2em;
+        margin-top: -5em;
     }
     .text-container .title {
         font-size: 5em;
@@ -129,6 +171,21 @@ main {
     .img-container img {
         margin-top: 0;
         height: 25em;
+    }
+    .menu-title {
+        font-size: 2em;
+    }
+    .food-items {
+        gap: .5em;
+        flex-flow: column;
+    }
+    .food {
+        width: 11em;
+    }
+    .food img {
+        height: 6em;
+        padding-bottom: .2em;
+        border-bottom: solid white 2px;
     }
 }
 
