@@ -1,13 +1,14 @@
 const content = document.getElementById('content');
 const main = document.querySelector('main');
 const navItems = document.querySelectorAll('.nav-item');
+const info = document.querySelector('.info');
 let homeBtn = document.getElementById('home-btn');
 let menuBtn = document.getElementById('menu-btn');
 let aboutBtn = document.getElementById('about-btn');
 let contactBtn = document.getElementById('contact-btn');
 
-homeBtn.addEventListener('click', () => {
-    main.innerHTML = `<div class="info">
+function defaultHome() {
+    main.innerHTML = `<div class="info fadeInAnimation">
     <div class="text-container">
         <p class="title">Lorenzo's</p>
         <p class="sub-title">Pizza Restaurant</p>
@@ -17,10 +18,14 @@ homeBtn.addEventListener('click', () => {
         <p class="img-caption">Made fresh since 1967</p>
     </div>
 </div>`
+}
+
+homeBtn.addEventListener('click', () => {
+    defaultHome();
 })
 
 menuBtn.addEventListener('click', () => {
-    main.innerHTML = `<div class="info">
+    main.innerHTML = `<div class="info fadeInAnimation">
     <h1 class="sub-title">Our Menu</h1>
     <div class="menu-items">
             <p class="menu-title">Appetizers & Sides</p>
@@ -126,7 +131,7 @@ menuBtn.addEventListener('click', () => {
 })
 
 aboutBtn.addEventListener('click', () => {
-    main.innerHTML = `<div class="info">
+    main.innerHTML = `<div class="info fadeInAnimation">
     <h1 class="sub-title">About Us</h1>
     <p class="food-cap" style="border-top: white solid 3px; padding-top: 2em;">Looking for something good to eat? Try the best pizzas in Mirefield.</p>
     <p class="food-cap">Lorenzo's Pizza & Restaurant remains one of the most popular in Mirefield thanks to its fresh ingredients. Give our menu a try & see what all the fuss is about.</p>
@@ -136,5 +141,21 @@ aboutBtn.addEventListener('click', () => {
 })
 
 contactBtn.addEventListener('click', () => {
-    main.innerHTML = ``
+    main.innerHTML = `<div class="info fadeInAnimation">
+    <h1 class="sub-title">Contact Information</h1>
+    <div class="content">
+        <p class="menu-title">Address</p>
+        <p class="food-cap">62 Lemmington Rd, Mirefield NJ 08732</p>
+    </div>
+    <div class="content">
+        <p class="menu-title">Phone Number</p>
+        <p class="food-cap">(609) 834-2889</p>
+    </div>
+    <div class="content">
+        <p class="menu-title">Store Hours</p>
+        <p class="food-cap">Sun-Thurs: 10am - 10pm</p>
+        <p class="food-cap">Fri-Sat: 10am - 11pm</p>
+    </div>
+</div>`
 })
+defaultHome();
