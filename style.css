@@ -80,6 +80,7 @@ main {
     font-size: 4em;
     margin: 0;
     font-style: italic;
+    text-align: center;
 }
 
 .img-container {
@@ -192,6 +193,10 @@ main {
 @font-face {
     font-family: Italian;
     src: url(media/italian.ttf);
+}
+
+.fadeInAnimation {
+    animation: fadeIn 1s linear; 
 }
 
 @keyframes fadeIn {
